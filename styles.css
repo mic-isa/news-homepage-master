@@ -112,7 +112,7 @@ body {
 }
 section{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
     grid-template-rows: repeat(10,minmax(0,1fr));
     gap:1.2rem;
     margin:1rem 0;  
@@ -226,7 +226,7 @@ section{
 .evolution-container{
     grid-row: span 1;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 .btn{
