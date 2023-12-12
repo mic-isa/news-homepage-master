@@ -213,21 +213,18 @@ section{
 }
 .news-content{
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .web-container{
     grid-column: span 1;
     grid-row: span 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 .evolution-container{
     grid-row: span 1;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -235,21 +232,21 @@ section{
 .btn{
     width: 50.85%;
     background-color: var(--clr-primary-soft-red);
-    border-radius: 0.0rem;
     border:none ;
-    padding:1rem ;
+    padding: 1rem 0.2rem ;
     color: var(--clr-off-white);
     font-size: 1.15rem;
 }
+.num-num-container,.num-container,.evolution-container,.web-container,.news-content{
+    display: flex;
+}
 .num-container{
     grid-row: span 1;
-    display: flex;
     gap:1rem;
     margin-top:0rem ;
     align-items: flex-start;
 }
 .num-num-container{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 90%;
@@ -275,10 +272,7 @@ section{
         align-items: center;
         justify-content: space-between;
     }
-    .hamburger{
-        display: none;
-    }
-    .close{
+    .hamburger,.close,.mobile{
         display: none;
     }
     .menu{
@@ -299,9 +293,6 @@ section{
         grid-row: span 1;
         position: relative;
     }
-    .mobile{   
-        display: none;
-    }
     .desktop{   
         display: flex;
         width: 100%;
@@ -314,9 +305,6 @@ section{
         grid-row: span 2;
         grid-column: span 1;
         padding: 1.5rem;
-    }
-    .news-content{
-        height: 100%;
     }
     .web-container{
         grid-row: span 1;
@@ -331,10 +319,6 @@ section{
         grid-column: span 1;
         margin-top:1.2rem ;
     } 
-    .num-container img{
-        min-width: 40%;
-        min-height: 90%;
-    }
 }
 .attribution {
     font-size: 16px; 
@@ -347,4 +331,19 @@ section{
 }
 .attribution a { 
    color: hsl(228, 45%, 44%); 
+}
+.btn:hover,.menu li:hover,h5:hover,h4:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--clr--dark-blue);
+}
+.menu li:hover,h5:hover,h4:hover{
+    cursor: pointer;
+}
+h4:hover{
+    color: var(--clr-primary-soft-orange);
+}
+h5:hover,.menu li:hover{
+    color: var(--clr-primary-soft-red);
 }
